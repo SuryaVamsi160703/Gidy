@@ -1,0 +1,34 @@
+/* <!--  Each box should have a width of 200px and a height of 100px.
+• Box1 should have a padding of 10px, a solid red border of 2px, and a margin of 10px.
+• Box2 should have a padding of 20px, a dashed green border of 4px, and a margin of 20px.
+• Box 3 should have a padding of 30px, a dotted blue border of 6px, and a margin of 30px.
+• The background color of Box1 should be lightcoral, Box2 should be lightgreen, and Box3 should be lightblue.
+
+ --> */
+.box1{
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    border: 2px solid red;
+    background-color: lightcoral;
+    margin: 10px;
+    
+}
+.box2{
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    background-color: lightgreen;
+    border: 4px dashed green;
+    margin: 20px;
+}
+
+.box3{
+    width: 200px;
+    height: 100px;
+    padding: 30px;
+    border: 6px dotted blue;
+    background-color: lightblue;
+    margin: 30px;
+    
+}
