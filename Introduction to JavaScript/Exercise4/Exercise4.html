@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Manipulation Exercise</title>
+</head>
+<body>
+    <hid="main-heading">Hello, World!</h1>
+    <p class="highlight">This is a highlighted paragraph.</p>
+    <p class="highlight">This is another highlighted paragraph.</p>
+    <p>This is a regular paragraph.</p>
+    <img id="profile-pic" src="old-image.jpg" alt="Profile Picture">
+    <div id="menu-item">Menu Item</div>
+
+    <script>
+// 1. Selecting Elements by ID
+function changeHeading() {
+    var heading = document.getElementById('main-heading');
+    if (heading) {
+        heading.textContent = "Welcome to JavaScript!";
+    }
+}
+
+// 2. Selecting Elements by Class
+function highlightParagraphs() {
+    var paragraphs = document.querySelectorAll('.highlight');
+    paragraphs.forEach(function(paragraph) {
+        paragraph.style.backgroundColor = 'yellow';
+    });
+}
+
+// 3. Selecting Elements by Tag
+function italicizeText() {
+    var paragraphs = document.getElementsByTagName('p');
+    for (var i = 0; i < paragraphs.length; i++) {
+        paragraphs[i].style.fontStyle = 'italic';
+    }
+}
+
+// 4. Modifying Attributes
+function updateImage() {
+    var image = document.getElementById('profile-pic');
+    if (image) {
+        image.src = 'new-image.jpg'; 
+    }
+}
+
+changeHeading(); 
+highlightParagraphs(); 
+italicizeText();
+updateImage(); 
+    </script>
+</body>
+</html>

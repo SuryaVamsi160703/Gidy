@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Elements Exercise</title>
+    <style>
+        #container {
+            margin: 20px;
+        }
+        .paragraph {
+            background-color: grey;
+            padding: 10px;
+            margin: 5px 0;
+            height: 100px;
+            cursor: pointer; /* Added for pointer cursor on paragraphs */
+        }
+        button {
+            background-color: #4CAF50; /* Green */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <button id="add-paragraph">Add Paragraph</button>
+    <button id="remove-paragraph">Remove Last Paragraph</button>
+    <div id="container"></div>
+    <script src="script.js"></script>    
+</body>
+</html>
