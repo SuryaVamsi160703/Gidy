@@ -1,0 +1,97 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0072C6;
+    color: #fff;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+  }
+  p {
+    font-family: Arial, sans-serif;
+    font-size: 16px; 
+    line-height: 1.6;
+    color: #000000; 
+  }
+  
+
+  h1 {
+    text-align: center;
+  }
+  
+  h1, h2, h3 {
+    margin: 0;
+    justify-content: center;
+  }
+  
+  /* Package Styles */
+  .package-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+  
+  .package {
+    background-color: #fff;
+    color: #333;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 30%;
+    text-align: center;
+    margin-right: 1cm; /* Adjust this value as needed */
+  }
+  
+  /* To ensure the last package doesn't have extra margin */
+  .package:last-child {
+    margin-right: 0;
+  }
+  
+  
+  .package-header {
+    position: relative;
+  }
+  
+  .package-header .popular-tag {
+    position: absolute;
+    top: -20px;
+    right: -10px;
+    background-color: #FF6B6B;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+  }
+  
+  .package-price h3 {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+  
+  .package-features p {
+    margin: 15px 0;
+  }
+  
+  .get-started-btn {
+    display: block;
+    width: 100%;
+    background-color: #0072C6;
+    color: #fff;
+    border: none; /* Remove the black border */
+    border-radius: 14px;
+    padding: 12px 0;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    height: 50px; /* Set a fixed height for all buttons */
+  }
+  
+  .get-started-btn:hover {
+    background-color: #005a9e;
+  }
+  

@@ -1,0 +1,17 @@
+.main {
+  text-align: left; /* Center align the content */
+  margin-top: 20px; /* Example margin for spacing */
+}
+
+.logo {
+  max-width: 100%; /* Ensure the logo doesn't exceed its container */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 20px; /* Example margin for spacing */
+}
+
+h1 {
+  font-family:ti; /* Example font stack */
+  color: black; /* Example text color */
+  font-size: 5.5em; /* Example font size */
+  font-weight: bold; /* Example font weight */
+}

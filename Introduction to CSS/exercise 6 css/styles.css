@@ -21,7 +21,7 @@ body, html {
     justify-content: space-between;
     width: 80%;
     max-width: 1200px;
-    background-color: black; /* Ensure the background is consistent */
+    background-color: black; 
 }
 
 .logo {
