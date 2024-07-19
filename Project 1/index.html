@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Daily Journal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My Daily Journal</h1>
+        <form id="journalForm">
+            <label for="entryText">Enter your thoughts or activities:</label><br>
+            <textarea id="entryText" name="entryText" rows="5" required></textarea><br>
+            <button type="submit">Save Entry</button>
+            <input type="hidden" id="entryIndex" value="-1">
+
+        </form>
+        <hr>
+        <div id="entries"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
