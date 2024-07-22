@@ -13,42 +13,43 @@ Interactivity:
 • HTML: Use semantic HTML to structure the form and journal entries section. • CSS: Use CSS to style the form, entries, and overall layout.
 • JavaScript: Implement local Storage to store and retrieve entries, and dynamically update the display.
 
-Explanation
-
+Explanation:<br>
+<br>
 HTML Explanation:
-Meta Tags: Standard meta tags for character set and viewport configuration.
-Title: Sets the title of the web page.
-Stylesheet: Links to an external CSS file (style.css) for styling.
-Body Content:
-Container: Contains the main content of the journal application.
-Form (journalForm):
-Textarea (entryText) for users to input their journal entries.
-Save button (submit) triggers form submission.
-Hidden input (entryIndex) stores the index of the entry being edited (-1 initially).
-HR: Horizontal line for visual separation.
-Div (entries): Placeholder for displaying saved journal entries.
-Script: Links to an external JavaScript file (script.js) for interactive functionality.
+Meta Tags: Standard meta tags for character set and viewport configuration.<br>
+Title: Sets the title of the web page.<br>
+Stylesheet: Links to an external CSS file (style.css) for styling.<br>
+Body Content:<br>
+Container: Contains the main content of the journal application.<br>
+Form (journalForm):<br>
+Textarea (entryText) for users to input their journal entries.<br>
+Save button (submit) triggers form submission.<br>
+Hidden input (entryIndex) stores the index of the entry being edited (-1 initially).<br>
+HR: Horizontal line for visual separation.<br>
+Div (entries): Placeholder for displaying saved journal entries.<br>
+Script: Links to an external JavaScript file (script.js) for interactive functionality.<br>
 
-CSS Explanation:
-Defines basic styling for the entire page, including fonts, colors, margins, and padding.
-Styles the container (div.container) where the journal form and entries are displayed.
-Customizes form elements (textarea, button) for consistent appearance and behavior.
+CSS Explanation:<br>
+Defines basic styling for the entire page, including fonts, colors, margins, and padding.<br>
+Styles the container (div.container) where the journal form and entries are displayed.<br>
+Customizes form elements (textarea, button) for consistent appearance and behavior.<br>
 
-JavaScript Explanation:
-Form Submission Handling (handleFormSubmit):
-Prevents default form submission behavior.
-Retrieves the journal entry text and validates it.
-Determines whether to save a new entry or update an existing one based on entryIndex.
-Clears the form fields after submission and updates the displayed entries.
-CRUD Operations (saveEntry, editEntry, deleteEntry):
-saveEntry: Adds a new entry to local storage.
-editEntry: Updates an existing entry in local storage.
-deleteEntry: Removes an entry from local storage.
-Display Entries (displayEntries):
-Retrieves stored entries from local storage.
-Renders each entry as a styled div (entryDiv) with text content and associated edit and delete buttons.
-Edit Entry Click Handling (editEntryClicked):
-Loads the selected entry into the form for editing and stores its index in entryIndex.
+JavaScript Explanation:<br>
+Form Submission Handling (handleFormSubmit):<br>
+Prevents default form submission behavior.<br>
+Retrieves the journal entry text and validates it.<br>
+Determines whether to save a new entry or update an existing one based on entryIndex.<br>
+Clears the form fields after submission and updates the displayed entries.<br>
+CRUD Operations (saveEntry, editEntry, deleteEntry):<br>
+saveEntry: Adds a new entry to local storage.<br>
+editEntry: Updates an existing entry in local storage.<br>
+deleteEntry: Removes an entry from local storage.<br>
+Display Entries (displayEntries):<br>
+Retrieves stored entries from local storage.<br>
+Renders each entry as a styled div (entryDiv) with text content and associated edit and delete buttons.<br>
+Edit Entry Click Handling (editEntryClicked):<br>
+Loads the selected entry into the form for editing and stores its index in entryIndex.<br>
+<br><br>
 Initialization:
-Calls displayEntries() initially to load any existing journal entries.
-Sets up form submission event listener (form.addEventListener('submit', handleFormSubmit)).
+Calls displayEntries() initially to load any existing journal entries.<br>
+Sets up form submission event listener (form.addEventListener('submit', handleFormSubmit)).<br>
