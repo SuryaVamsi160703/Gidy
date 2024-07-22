@@ -5,20 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personalized Daily Journal</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="planner.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 </head>
 <body>
     <div class="container">
-        <h1>My Daily Journal</h1>
+        <h1>My Daily Journal🧾</h1>
         <form id="journalForm">
-            <label for="entryText">Enter your thoughts or activities:</label><br>
+            <label for="entryTitle">Title:</label><br>
+            <input type="text" id="entryTitle" name="entryTitle" required><br>
+            <label for="entryMood">How do you feel today?</label><br>
+            <select name="mood" id="mood">
+            <option value="">--Please choose an option--</option>
+            <option value="happy">😊 Happy</option>
+            <option value="sad">😢 Sad</option>
+            <option value="angry">😡 Angry</option>
+            <option value="calm">😌 Calm</option>
+            <option value="excited">😃 Excited</option>
+            <option value="content">😊 Content</option>
+            <option value="anxious">😰 Anxious</option>
+            <option value="grateful">🙏 Grateful</option>
+            <option value="stressed">😬 Stressed</option>
+            <option value="relaxed">😌 Relaxed</option>
+</select><br>
+            <br>
+            <label for="entryText"><br>Enter your thoughts or activities:</label><br>
             <textarea id="entryText" name="entryText" rows="5" required></textarea><br>
-            <button type="submit">Save Entry</button>
+            <button type="submit" class="save-btn">
+                <i class="fas fa-save"></i> Save Entry
+            </button>
             <input type="hidden" id="entryIndex" value="-1">
-
         </form>
         <hr>
-        <div id="entries"></div>
-    </div>
+        <div>
+            <label for="titleSearch">Search by Title:</label>
+            <input type="text" id="titleSearch" name="titleSearch">
+            <button onclick="searchByTitle()">Search🔍</button>
+        </div>
+        <!-- <div>
+            <label for="timeSearch">Search by Date & Time-:</label>
+            <input type="text" id="timeSearch" name="timeSearch">
+            <button onclick="searchByTime()">Search</button>
+        </div> -->
+        <hr>
+        <a href="saved_entries.html" class="btn">See Saved Entries📁</a>
+        <br> <br>
+        <div class="button-group">
+        <a href="login.html" class="btnn">Logout ↩️</a></div>
+        <div id="entries" class="entries-container"></div>
+  
 
     <script src="script.js"></script>
 </body>
